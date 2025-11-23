@@ -15,6 +15,7 @@ import {
   Scan,
   Brain,
   Loader2,
+  Library,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useTheme } from '../context/ThemeContext';
@@ -66,6 +67,7 @@ const MainLayout = () => {
   const navigation = [
     { name: 'Дашборд', href: '/', icon: LayoutDashboard },
     { name: 'Книги', href: '/books', icon: BookOpen },
+    { name: 'Взятые книги', href: '/loans', icon: Library },
     { name: 'Мероприятия', href: '/events', icon: Calendar },
     { name: 'Гости', href: '/users', icon: Users },
     { name: 'Проверка штрихкода', href: '/barcode-check', icon: Scan },

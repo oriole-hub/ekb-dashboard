@@ -5,6 +5,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Books from './pages/Books';
+import Loans from './pages/Loans';
 import Events from './pages/Events';
 import UsersPage from './pages/Users';
 import RegisterStaff from './pages/RegisterStaff';
@@ -84,6 +85,7 @@ function App() {
               >
                 <Route index element={<Dashboard />} />
                 <Route path="books" element={<Books />} />
+                <Route path="loans" element={<Loans />} />
                 <Route path="events" element={<Events />} />
                 <Route path="users" element={<UsersPage />} />
                 <Route path="barcode-check" element={<BarcodeCheck />} />
