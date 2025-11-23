@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+* {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+:root {
+  --background: 255 255 255;
+  --foreground: 28 28 30;
+}
+
+.dark {
+  --background: 0 0 0;
+  --foreground: 255 255 255;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-feature-settings: 'rlig' 1, 'calt' 1;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #000000;
+}
+
+.glass {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(31, 41, 55, 0.5);
+}
+
+.glass-card {
+  background-color: rgba(31, 41, 55, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(55, 65, 81, 0.3);
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
